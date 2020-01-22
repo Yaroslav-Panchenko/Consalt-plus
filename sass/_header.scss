@@ -1,0 +1,41 @@
+.header-contacts {
+    background-color: $light-black;
+}
+
+.header-mail, .header-phone {
+    font: 400 0.75rem $montserat;
+    color: $light-grey;
+    padding: 15px 10px;
+    letter-spacing: 0.6px;
+}
+.header-mail {
+    border-right: 1px solid $light-grey;
+}
+.navbar-light .navbar-nav .nav-style {
+    font: 600 0.875rem $montserat;
+    color: $nav-color;
+    margin: 5px 16px;
+    padding: 0;
+    &:hover {
+        color: $yellow;
+    }
+}
+.navbar-light .navbar-nav .active-color {
+    color: $yellow;
+}
+
+//------------------------------------------------------------
+//--------------------------Media Query-----------------------
+//------------------------------------------------------------
+
+@media (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-style {
+        margin: 33px 16px;
+    }
+    .header-mail, .header-phone {
+        padding: 15px 30px;
+    }
+}
+@media (min-width: 992px) {
+    
+  }

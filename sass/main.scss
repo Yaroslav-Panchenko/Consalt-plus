@@ -1,0 +1,80 @@
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+@import "_header";
+@import "_footer";
+
+.main-bg {
+    background: url(../img/bg.jpg) no-repeat center top/cover;
+}
+
+.main-heading {
+    background-color: $yellow;
+    font: 400 1.875rem $lato;
+    letter-spacing: -0.75px;
+    color: $white;
+    padding: 32px 50px;
+
+    span {
+        font: 400 0.875rem $montserat;
+        display: block;
+    }
+}
+
+.industry-item {
+    width: 50%;
+    border: 1px solid $dark-blue;
+    .industry-link {
+        display: block;
+        width: 100%;
+        background-color: $blue;
+        padding: 30px 10px 30px 10px;
+        color: $white;
+
+        &:hover {
+            background-color: darken($blue, 10%);
+            color: $white;
+        }
+    }
+}
+
+.industry-title {
+    font: 400 0.875rem $montserat;
+    text-transform: uppercase;
+    letter-spacing: -0.14px;
+}
+
+.industry-button {
+    width: 50%;
+    border: 1px solid $dark-blue;
+    background-color: $blue;
+    a {
+        display: inline-block;
+        background-color: $bg-button;
+        color: $white;
+        padding: 21px 34px;
+        border-radius: 50px;
+        font: 400 0.813rem $montserat;
+        text-transform: uppercase;
+        &:hover {
+            color: $white;
+            background-color: darken($bg-button, 10%);
+        }
+    }
+}
+
+//------------------------------------------------------------
+//--------------------------Media Query-----------------------
+//------------------------------------------------------------
+
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) {
+    .main-bg {
+        padding-top: 176px;
+    }
+    .industry-item .industry-link {
+        padding: 30px 28px 30px 40px;
+    }
+}
