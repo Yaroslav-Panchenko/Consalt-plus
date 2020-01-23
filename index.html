@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+    <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <title>Consalt Plus</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header-contacts">
@@ -20,7 +19,7 @@
                     <span class="text-white mr-1">Email : </span> <a href="mailto:@consultplus.com">@consultplus.com</a>
                 </li>
                 <li class="header-phone pr-0">
-                    <span class="text-white mr-1">Phone : </span><a href="tel: +9156856664555">+91 5685 6664 555</a>
+                    <span class="text-white mr-1">Phone : </span><a href="tel:+9156856664555">+91 5685 6664 555</a>
                 </li>
             </ul>
         </div>
@@ -208,12 +207,13 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div>
     </section>
     <section class="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 text-center text-md-right about-description">
-                    <h2><span>What we are</span>About us</h2>
+                    <h2 class="section-title"><span>What we are</span>About us</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -244,7 +244,7 @@
     </section>
     <section class="steps">
         <div class="container">
-            <h2 class="steps-title text-center text-md-left"><span>Our</span>Steps</h2>
+            <h2 class="section-title text-center text-md-left"><span>Our</span>Steps</h2>
             <ul class="row steps-list text-center text-md-left">
                 <li class="col-12 col-md-4 steps-item steps-industry-item mb-3 mb-md-0">
                     <span>01</span>
@@ -269,7 +269,7 @@
     </section>
     <section class="project">
         <div class="container">
-            <h2 class="project-title text-center text-md-left"><span>Featured</span> Projects</h2>
+            <h2 class="section-title text-center text-md-left"><span>Featured</span> Projects</h2>
             <div class="row mb-4">
                 <ul class="col-12 col-md-6">
                     <li class="mb-3 mb-xl-0 project-item">
@@ -337,7 +337,7 @@
     </section>
     <section class="testimonials text-center text-md-left">
         <div class="container">
-            <h2 class="testimonials-title"><span>Happy CLients</span>Testimonials</h2>
+            <h2 class="testimonials-title section-title"><span>Happy CLients</span>Testimonials</h2>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <ul class="carousel-inner">
                     <li class="carousel-item active">
@@ -399,49 +399,239 @@
                     </li>
                 </ul>
                 <ul class="carousel-indicators text-center text-md-left align-items-center">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator-item d-md-flex align-items-center">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                        class="active indicator-item d-md-flex align-items-center">
                         <picture>
                             <source srcset="img/client1.webp" type="image/webp">
-                            <img src="img/client1.png" alt="Photo client" class="mr-md-4">
+                            <img src="img/client1.png" alt="Paul Allen" class="mr-md-4">
                         </picture>
                         <p><span>Paul Allen</span>Designation</p>
                     </li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicator-item d-md-flex align-items-center">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                        class="indicator-item d-md-flex align-items-center">
                         <picture>
                             <source srcset="img/client2.webp" type="image/webp">
-                            <img src="img/client2.png" alt="Photo client" class="mr-md-4">
+                            <img src="img/client2.png" alt="Chris Hirata" class="mr-md-4">
                         </picture>
                         <p><span>Chris Hirata</span>Designation</p>
                     </li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicator-item d-md-flex align-items-center">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                        class="indicator-item d-md-flex align-items-center">
                         <picture>
                             <source srcset="img/client3.webp" type="image/webp">
-                            <img src="img/client3.png" alt="Photo client" class="mr-md-4">
+                            <img src="img/client3.png" alt="Monica Ricci" class="mr-md-4">
                         </picture>
                         <p><span>Monica Ricci</span>Designation</p>
                     </li>
-                    <li class="indicator-item d-none d-lg-flex">
+                    <li class="indicator-item last-indicator d-none d-lg-flex">
                         <ul class="carousel-indicators inner-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active-inner"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                          </ul>
+                            <li data-target="#carouselExampleIndicators" class="inner-indicator-item active-inner"
+                                data-slide-to="0"></li>
+                            <li data-target="#carouselExampleIndicators" class="inner-indicator-item" data-slide-to="1">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" class="inner-indicator-item" data-slide-to="2">
+                            </li>
+                        </ul>
                     </li>
                 </ul>
+            </div>
         </div>
     </section>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <section class="blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 blog-items text-center text-lg-left">
+                    <div class="blog-headings d-flex flex-column flex-md-row align-items-center align-items-md-end flex-wrap justify-content-center justify-content-xl-start mb-4">
+                        <h2 class="section-title mb-0 mr-xl-5"><span>News</span> Our Blog</h2>
+                        <button class="my-2 my-md-0 mx-md-2 active-button" id="top-post-btn">Top posts</button>
+                        <button class="my-2 my-md-0 mx-md-2" id="all-post-btn">Check all post</button>
+                    </div>
+                    <ul class="top-post px-md-5 pl-xl-0 pr-xl-4">
+                        <li class="blog-item mb-5">
+                            <time class="blog-date d-block" datetime="2016-02-20">February 20, 2016 </time>
+                            <a href="#">
+                                <h4>Blog Heading here Business</h4>
+                            </a>
+                            <p class="blog-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry...</p>
+                        </li>
+                        <li class="blog-item mb-5">
+                            <time class="blog-date d-block" datetime="2016-02-22">February 22, 2016 </time>
+                            <a href="#">
+                                <h4>many variations of passages of Ipsum</h4>
+                            </a>
+                            <p class="blog-description">Established fact that a reader will be distracted by the
+                                readable
+                                of a page when looking at its layout. The point of using Lorem...
+                                Ipsum is that </p>
+                        </li>
+                        <li class="blog-item">
+                            <time class="blog-date d-block" datetime="2016-02-25">February 25, 2016 </time>
+                            <a href="#">
+                                <h4>Internet tend to repeat predefined</h4>
+                            </a>
+                            <p class="blog-description">Popularised in the 1960s with the release of Letraset sheets
+                                containing Lorem Ipsum passages...</p>
+                        </li>
+                    </ul>
+                    <ul class="all-post px-md-5 pl-xl-0 pr-xl-4">
+                        <li class="blog-item mb-5">
+                            <time class="blog-date d-block" datetime="2016-02-28">February 28, 2016 </time>
+                            <a href="#">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </a>
+                            <p class="blog-description">Established fact that a reader will be distracted by the
+                                readable
+                                of a page when looking at its layout. The point of using Lorem...
+                                Ipsum is that </p>
+                        </li>
+                        <li class="blog-item mb-5">
+                            <time class="blog-date d-block" datetime="2016-02-27">February 27, 2016 </time>
+                            <a href="#">
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                            </a>
+                            <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Pariatur est, neque dolor, amet hic nostrum aperiam ad molestias voluptate aspernatur
+                                inventore eos eaque nulla fugiat?</p>
+                        </li>
+                        <li class="blog-item mb-5">
+                            <time class="blog-date d-block" datetime="2016-02-27">February 27, 2016 </time>
+                            <a href="#">
+                                <h4>Internet tend to repeat predefined</h4>
+                            </a>
+                            <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Sapiente recusandae necessitatibus quaerat doloribus! Nostrum in nulla voluptatibus quos
+                                expedita. Quos suscipit sapiente beatae voluptatibus laboriosam inventore quia debitis
+                                minus placeat, distinctio modi soluta voluptas cum nemo delectus qui. Obcaecati
+                                distinctio illo repellat exercitationem aliquid quae.</p>
+                        </li>
+                        <li class="blog-item">
+                            <time class="blog-date d-block" datetime="2016-02-25">February 25, 2016 </time>
+                            <a href="#">
+                                <h4>Many variations of passages of Ipsum</h4>
+                            </a>
+                            <p class="blog-description">Established fact that a reader will be distracted by the
+                                readable
+                                of a page when looking at its layout. The point of using Lorem...
+                                Ipsum is that </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-block col-lg-6 p-0">
+                    <picture class="blog-img d-block">
+                        <source srcset="img/blog-img.webp" type="image/webp">
+                        <img src="img/blog-img.png" alt="Blog img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title text-center"><span>For Consulting</span>Contact us</h2>
+            <ul class="d-flex flex-column flex-lg-row">
+                <li class="d-md-flex align-items-start contact-item mx-auto text-center mb-3">
+                    <picture>
+                        <source srcset="img/icon_email.webp" type="image/webp">
+                        <img src="img/icon_email.png" alt="Email icon">
+                    </picture>
+                    <p class="ml-md-5"><span class="d-block">Email</span><a
+                            href="mailto:info@consultplus.com">info@consultplus.com</a></p>
+                </li>
+                <li class="d-md-flex align-items-center contact-item mx-auto text-center mb-3">
+                    <picture>
+                        <source srcset="img/icon_call.webp" type="image/webp">
+                        <img src="img/icon_call.png" alt="Call icon">
+                    </picture>
+                    <p class="ml-md-5"><span class="d-block">Call Us</span><a href="tel:+9188798767990">+91 8879 8767
+                            990</a></p>
+                </li>
+                <li class="d-md-flex align-items-center contact-item mx-auto text-center mb-3">
+                    <picture>
+                        <source srcset="img/icon_career.webp" type="image/webp">
+                        <img src="img/icon_career.png" alt="Career icon">
+                    </picture>
+                    <p class="ml-md-5"><span class="d-block">Call Us</span><a
+                            href="mailto:info@consultplus.com">consult@career.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center text-lg-left">
+            <div class="row">
+                <div class="col-12 col-md-6 footer-letter mb-4">
+                    <h3 class="footer-title">News letter</h3>
+                    <p>
+                        Enter your email address to subscribe our notification of our new post & features by email.
+                    </p>
+                    <!-- Begin Mailchimp Signup Form -->
+
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://gmail.us5.list-manage.com/subscribe/post?u=027bf72171451dbc75decfa2e&amp;id=a7c2826888"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate footer-form text-left p-0" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <input type="email" value="" name="EMAIL" class="email mb-3" id="mce-EMAIL"
+                                    placeholder="email address" required>
+                                <div class="clear">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                        class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-between  flex-wrap mb-5">
+                    <li class="mb-3">
+                        <h3 class="footer-title">Navigation</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Industry</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3">
+                        <h3 class="footer-title">Industary</h3>
+                        <ul class="footer-list">
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Realestate</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Banking</a></li>
+                            <li><a href="#">Telecomunication</a></li>
+                            <li><a href="#">Much more</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3">
+                        <h3 class="footer-title">Follow us</h3>
+                        <ul class="footer-list">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Google +</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="footer-copyright">Copyright &copy; 2016 Consultplus theme.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" defer>
+    </script>
     <script src="js/custom.js" defer></script>
 </body>
-
 </html>

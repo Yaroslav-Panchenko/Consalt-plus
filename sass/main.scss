@@ -3,15 +3,13 @@
 @import "_mixins";
 @import "_header";
 @import "_footer";
-
+// -----------------------Main section--------------------
 .main {
     position: relative;
 }
-
 .main-bg {
     background: url(../img/bg.jpg) no-repeat center top/cover;
 }
-
 .main-heading {
     background-color: $yellow;
     font: 400 1.875rem $lato;
@@ -24,7 +22,6 @@
         display: block;
     }
 }
-
 .industry-item {
     width: 50%;
     border: 1px solid $dark-blue;
@@ -42,36 +39,38 @@
         }
     }
 }
-
 .industry-title {
     font: 400 0.875rem $montserat;
     text-transform: uppercase;
     letter-spacing: -0.14px;
 }
-
 .industry-button {
     width: 50%;
     border: 1px solid $dark-blue;
     background-color: $blue;
-
     a {
         @include button;
     }
 }
-
 .arrow {
     display: none;
 }
-
+// ----------------About section---------------------
 .about {
     padding: 30px 0;
 }
-
-.about-description {
-    h2 {
-        @include section-title;
+.section-title {
+    font: 700 2rem $montserat; 
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    span {
+        display: block;
+        font: 400 0.875rem $montserat;
+        color: $light-text;
     }
-
+}
+.about-description {
     p {
         font: 400 0.938rem $domine;
         color: $light-text;
@@ -79,29 +78,24 @@
         letter-spacing: -.2px;
         margin-bottom: 40px;
     }
-
     a {
         @include button;
     }
 }
-
 .excellence {
     border: 6px solid $white;
     background-color: $blue;
     padding: 18px;
     max-width: 237px;
     margin-top: 30px;
-
     .wrapper {
         border: 1px solid $light-blue;
-
         p {
             color: $white;
             font: 400 0.625rem $montserat;
             text-align: center;
             margin-bottom: 20px;
             text-transform: uppercase;
-
             span {
                 display: block;
                 font-size: 4.688rem;
@@ -109,16 +103,11 @@
         }
     }
 }
-
+// ------------------Steps section-------------------
 .steps {
     background-color: $steps-bg;
     padding: 40px 0;
 }
-
-.steps-title {
-    @include section-title;
-}
-
 .steps-item {
     span {
         display: block;
@@ -126,54 +115,42 @@
         color: $light-green;
         margin-bottom: 6px;
     }
-
     h3 {
         font: 700 1.125rem $montserat;
         text-transform: uppercase;
         letter-spacing: -0.9px;
         margin-bottom: 30px;
     }
-
     p {
         font: 400 0.938rem $domine;
         line-height: 28px;
         color: $light-text;
     }
 }
-
 .steps-industry-item::before {
     content: url(../img/icon_industry.png);
     margin-bottom: 20px;
     display: block;
 }
-
 .steps-service-item::before {
     content: url(../img/icon_service.png);
     margin-bottom: 18px;
     display: block;
 }
-
 .steps-bussines-item::before {
     content: url(../img/icon_business.png);
     margin-bottom: 8px;
     display: block;
 }
-
+// ---------------------Project section-----------------
 .project {
     padding: 30px 0;
 }
-
-.project-title {
-    @include section-title;
-}
-
 .project-building, .project-technology {
     max-width: 48%;
 }
-
 .project-item {
     position: relative;
-
     .project-link {
         position: absolute;
         top: 20px;
@@ -189,7 +166,6 @@
             background-color: $yellow;
         }
     }
-
     .project-corner {
         position: absolute;
         bottom: 0;
@@ -200,13 +176,11 @@
         border-right: 56px solid transparent;
         color: $white;
         z-index: 9;
-
         &:hover {
             border-bottom-color: $dark-yellow;
             transition: all .2s linear;
             cursor: pointer
         }
-
         span {
             position: absolute;
             bottom: -45px;
@@ -214,7 +188,6 @@
         }
     }
 }
-
 .project-overlay {
     position: absolute;
     background-color: $yellow;
@@ -231,46 +204,38 @@
     z-index: -1;
     color: $white;
     text-align: center;
-
     h3 {
         font: 700 1.125rem $montserat;
         line-height: 33px;
     }
-
     p {
         font: 400 1rem $domine;
         line-height: 22px;
     }
 }
-
 .none {
     opacity: 1;
     transition: all 0.4s ease-in-out;
     z-index: 1;
 }
-
 .project-item .corner-active {
     border-bottom-color: $dark-yellow;
 }
-
 .project-button {
     @include button;
 }
-
+// ---------------------Testimonials section-------------------
 .testimonials {
     background-color: $blue;
     padding: 30px 0;
 }
-
 .testimonials-title {
-    @include section-title;
     color: $white;
     margin-bottom: 40px;
     span {
         color: $white;
     }
 }
-
 .comment-wrapper {
     p {
         max-width: 890px;
@@ -286,7 +251,6 @@
         }
     }
 }
-
 .carousel-indicators {
     justify-content: space-between;
     position: static;
@@ -308,7 +272,6 @@
             font: 400 0.938rem/30px $domine;
             color: $white;
             color: $comment;
-
             span {
                 text-transform: uppercase;
                 font: 700 0.938rem $montserat;
@@ -317,16 +280,93 @@
         }
     }
 }
-.inner-indicators li {
+.inner-indicators .inner-indicator-item {
     width: 10px;
     height: 10px;
     border: 5px solid $white;
     border-radius: 50%;
+    background-color: transparent;
     opacity: 1;
 }
 .inner-indicators .active-inner {
     border-color: $light-green;
+    transition: .5s;
+}
+.carousel-indicators .last-indicator {
     opacity: 1;
+}
+// ----------------------------Blog section---------------------------
+.blog {
+    background-color: $steps-bg;
+}
+.blog-items {
+    padding: 60px 0;
+    padding-left: calc((100vw - 1140px) / 2);
+}
+.blog-headings {
+    button {
+        font: 600 0.75rem $montserat;
+        color: $nav-color;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border: 2px solid $nav-color;
+        border-radius: 50px;
+        outline: none;
+        &:hover {
+            border-color: $yellow;
+        }
+    }
+    .active-button {
+        background-color: $yellow;
+        border-color: $yellow;
+    }
+}
+.blog-item {
+    .blog-date {
+        font: 700 0.938rem $domine;
+        margin-bottom: 12px;
+    }
+    a {
+        color:$light-black;
+        h4 {
+        font: 700 1.125rem $montserat;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        }
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .blog-description {
+        font: 400 0.938rem/28px $domine;
+        color: $light-text;
+    }
+}
+.blog-img {
+   overflow: hidden; 
+}
+.all-post {
+    display: none;
+}
+// ---------------------------Contacts section---------------
+.contact {
+    padding: 30px 0;
+}
+.contact-item {
+    p {
+        font: 400 1.125rem/28px $domine;
+        span {
+            font: 700 1.125rem $montserat;
+            text-transform: uppercase;
+            letter-spacing: -0.9px;
+        }
+        a {
+            color: $light-black;
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
 }
 //------------------------------------------------------------
 //--------------------------Media Query-----------------------
@@ -374,6 +414,12 @@
         padding: 90px 0;
     }
     .testimonials {
+        padding: 90px 0;
+    }
+    .blog-img {
+        overflow: hidden; 
+     }
+     .contact {
         padding: 90px 0;
     }
 }

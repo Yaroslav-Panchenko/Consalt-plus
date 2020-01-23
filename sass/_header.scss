@@ -1,7 +1,6 @@
 .header-contacts {
     background-color: $light-black;
 }
-
 .header-mail, .header-phone {
     font: 400 0.75rem $montserat;
     padding: 15px 10px;
@@ -28,11 +27,9 @@
 .navbar-light .navbar-nav .active-color {
     color: $yellow;
 }
-
 //------------------------------------------------------------
 //--------------------------Media Query-----------------------
 //------------------------------------------------------------
-
 @media (min-width: 768px) {
     .navbar-light .navbar-nav .nav-style {
         margin: 33px 16px;
@@ -41,6 +38,3 @@
         padding: 15px 30px;
     }
 }
-@media (min-width: 992px) {
-    
-  }

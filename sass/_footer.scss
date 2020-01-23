@@ -1,0 +1,68 @@
+.footer {
+    background-color: $light-black;
+    padding: 40px 0;
+}
+.footer-title {
+    font: 700 1.25rem $montserat;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: $footer-title;
+    margin-bottom: 30px;
+}
+.footer-letter {
+    p {
+        font: 400 0.938rem/24px $domine;
+        color: $footer-text;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+}
+#mc_embed_signup input.email {
+    background-color: lighten($light-black, 10%);
+    max-width: 450px;
+    border: none;
+    border-radius: 50px;
+    padding: 26px;
+    color: $white;
+}   
+input.email::placeholder {
+    font: 400 0.813rem $montserat;
+        text-transform: uppercase;
+}
+#mc_embed_signup .button {
+    background-color: $bg-button;
+    font: 400 0.938rem $montserat;
+    color: $white;
+    padding: 0 34px;
+    border-radius: 50px;
+    height: 52px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($bg-button, 10%);
+    }
+}
+.footer-list li a{
+    color: $footer-text;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font: 400 0.813rem/30px $montserat;
+    &:hover {
+        color: $white;
+    }
+}
+.footer-copyright {
+    font: 400 0.938rem $domine;
+    color: $footer-text;
+    width: 100%;
+    padding-top: 40px;
+    border-top: 1px solid $footer-text;
+}
+@media (min-width: 1200px) {
+    #mc_embed_signup .button {
+        margin-left: -45px;
+        padding: 0 34px;
+    }
+    .footer {
+        padding: 70px 0;
+    }
+}
