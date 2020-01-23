@@ -127,27 +127,9 @@
         color: $light-text;
     }
 }
-.steps-industry-item::before {
-    content: url(../img/icon_industry.png);
-    margin-bottom: 20px;
-    display: block;
-}
-.steps-service-item::before {
-    content: url(../img/icon_service.png);
-    margin-bottom: 18px;
-    display: block;
-}
-.steps-bussines-item::before {
-    content: url(../img/icon_business.png);
-    margin-bottom: 8px;
-    display: block;
-}
 // ---------------------Project section-----------------
 .project {
     padding: 30px 0;
-}
-.project-building, .project-technology {
-    max-width: 48%;
 }
 .project-item {
     position: relative;
@@ -283,7 +265,7 @@
 .inner-indicators .inner-indicator-item {
     width: 10px;
     height: 10px;
-    border: 5px solid $white;
+    border: 3px solid $white;
     border-radius: 50%;
     background-color: transparent;
     opacity: 1;
@@ -301,7 +283,6 @@
 }
 .blog-items {
     padding: 60px 0;
-    padding-left: calc((100vw - 1140px) / 2);
 }
 .blog-headings {
     button {
@@ -419,7 +400,19 @@
     .blog-img {
         overflow: hidden; 
      }
+     .blog-items {
+        padding-left: calc((100vw - 1140px) / 2);
+    }
      .contact {
         padding: 90px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .contact-item {
+        border: 1px solid $border-contact;
+        padding: 30px;
+    }
+    .project-building, .project-technology {
+        max-width: 48%;
     }
 }
