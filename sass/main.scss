@@ -4,6 +4,10 @@
 @import "_header";
 @import "_footer";
 
+.main {
+    position: relative;
+}
+
 .main-bg {
     background: url(../img/bg.jpg) no-repeat center top/cover;
 }
@@ -24,6 +28,7 @@
 .industry-item {
     width: 50%;
     border: 1px solid $dark-blue;
+
     .industry-link {
         display: block;
         width: 100%;
@@ -48,27 +53,294 @@
     width: 50%;
     border: 1px solid $dark-blue;
     background-color: $blue;
+
     a {
-        display: inline-block;
-        background-color: $bg-button;
-        color: $white;
-        padding: 21px 34px;
-        border-radius: 50px;
-        font: 400 0.813rem $montserat;
-        text-transform: uppercase;
-        &:hover {
+        @include button;
+    }
+}
+
+.arrow {
+    display: none;
+}
+
+.about {
+    padding: 30px 0;
+}
+
+.about-description {
+    h2 {
+        @include section-title;
+    }
+
+    p {
+        font: 400 0.938rem $domine;
+        color: $light-text;
+        line-height: 28px;
+        letter-spacing: -.2px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        @include button;
+    }
+}
+
+.excellence {
+    border: 6px solid $white;
+    background-color: $blue;
+    padding: 18px;
+    max-width: 237px;
+    margin-top: 30px;
+
+    .wrapper {
+        border: 1px solid $light-blue;
+
+        p {
             color: $white;
-            background-color: darken($bg-button, 10%);
+            font: 400 0.625rem $montserat;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                font-size: 4.688rem;
+            }
         }
     }
 }
 
+.steps {
+    background-color: $steps-bg;
+    padding: 40px 0;
+}
+
+.steps-title {
+    @include section-title;
+}
+
+.steps-item {
+    span {
+        display: block;
+        font: 600 1.25rem $montserat;
+        color: $light-green;
+        margin-bottom: 6px;
+    }
+
+    h3 {
+        font: 700 1.125rem $montserat;
+        text-transform: uppercase;
+        letter-spacing: -0.9px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font: 400 0.938rem $domine;
+        line-height: 28px;
+        color: $light-text;
+    }
+}
+
+.steps-industry-item::before {
+    content: url(../img/icon_industry.png);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.steps-service-item::before {
+    content: url(../img/icon_service.png);
+    margin-bottom: 18px;
+    display: block;
+}
+
+.steps-bussines-item::before {
+    content: url(../img/icon_business.png);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.project {
+    padding: 30px 0;
+}
+
+.project-title {
+    @include section-title;
+}
+
+.project-building, .project-technology {
+    max-width: 48%;
+}
+
+.project-item {
+    position: relative;
+
+    .project-link {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: $white;
+        text-transform: uppercase;
+        font: 400 0.875rem $montserat;
+        padding: 7px 15px;
+        border: 2px solid $yellow;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+
+    .project-corner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 56px solid $blue;
+        border-right: 56px solid transparent;
+        color: $white;
+        z-index: 9;
+
+        &:hover {
+            border-bottom-color: $dark-yellow;
+            transition: all .2s linear;
+            cursor: pointer
+        }
+
+        span {
+            position: absolute;
+            bottom: -45px;
+            left: 10px;
+        }
+    }
+}
+
+.project-overlay {
+    position: absolute;
+    background-color: $yellow;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+    color: $white;
+    text-align: center;
+
+    h3 {
+        font: 700 1.125rem $montserat;
+        line-height: 33px;
+    }
+
+    p {
+        font: 400 1rem $domine;
+        line-height: 22px;
+    }
+}
+
+.none {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.project-item .corner-active {
+    border-bottom-color: $dark-yellow;
+}
+
+.project-button {
+    @include button;
+}
+
+.testimonials {
+    background-color: $blue;
+    padding: 30px 0;
+}
+
+.testimonials-title {
+    @include section-title;
+    color: $white;
+    margin-bottom: 40px;
+    span {
+        color: $white;
+    }
+}
+
+.comment-wrapper {
+    p {
+        max-width: 890px;
+        color: $comment;
+        font: 400 0.938rem/28px $domine;
+        &:after {
+            content: '';
+            display: none;
+            width: 17px;
+            height: 2px;
+            background-color: $white;
+            margin-top: 35px;
+        }
+    }
+}
+
+.carousel-indicators {
+    justify-content: space-between;
+    position: static;
+    margin: 0;
+    .indicator-item {
+        text-indent: 0;
+        width: auto;
+        height: auto;
+        margin: 0;
+        background: none;
+        border: 0;
+        picture img {
+            max-width: 67px;
+            height: 67px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        p {
+            font: 400 0.938rem/30px $domine;
+            color: $white;
+            color: $comment;
+
+            span {
+                text-transform: uppercase;
+                font: 700 0.938rem $montserat;
+                display: block;
+            }
+        }
+    }
+}
+.inner-indicators li {
+    width: 10px;
+    height: 10px;
+    border: 5px solid $white;
+    border-radius: 50%;
+    opacity: 1;
+}
+.inner-indicators .active-inner {
+    border-color: $light-green;
+    opacity: 1;
+}
 //------------------------------------------------------------
 //--------------------------Media Query-----------------------
 //------------------------------------------------------------
-
 @media (min-width: 768px) {
-  
+    .excellence {
+        margin: -50px 0 -188px;
+        z-index: 9;
+        position: relative;
+    }
+    .comment-wrapper p:after {
+        content: '';
+        display: block;           
+    }
 }
 @media (min-width: 992px) {
     .main-bg {
@@ -76,5 +348,32 @@
     }
     .industry-item .industry-link {
         padding: 30px 28px 30px 40px;
+    }
+    .arrow {
+        display: flex;
+        position: absolute;
+        top: calc(50% - 53px);
+        height: 106px;
+        width: 30px;
+        background-color: $light-black;
+        opacity: .7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .about {
+        padding: 90px 0;
+    }
+    .excellence {
+        margin: -90px 0 -188px;
+    }
+    .steps {
+        padding: 95px 0;
+    }
+    .project {
+        padding: 90px 0;
+    }
+    .testimonials {
+        padding: 90px 0;
     }
 }

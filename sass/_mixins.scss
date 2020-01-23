@@ -1,1 +1,26 @@
 
+@mixin button {
+    display: inline-block;
+    background-color: $bg-button;
+    color: $white;
+    padding: 18px 34px;
+    border-radius: 50px;
+    font: 400 0.813rem $montserat;
+    text-transform: uppercase;
+    &:hover {
+        color: $white;
+        background-color: darken($bg-button, 10%);
+    }
+}
+
+@mixin section-title {
+    font: 700 2rem $montserat; 
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    span {
+        display: block;
+        font: 400 0.875rem $montserat;
+        color: $light-text;
+    }
+}

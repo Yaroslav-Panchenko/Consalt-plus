@@ -4,9 +4,14 @@
 
 .header-mail, .header-phone {
     font: 400 0.75rem $montserat;
-    color: $light-grey;
     padding: 15px 10px;
     letter-spacing: 0.6px;
+    a {
+        color: $light-grey;
+        &:hover {
+            color: $white;
+        }
+    }
 }
 .header-mail {
     border-right: 1px solid $light-grey;

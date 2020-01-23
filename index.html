@@ -17,10 +17,10 @@
         <div class="header-contacts">
             <ul class="container d-flex justify-content-end">
                 <li class="header-mail">
-                    <span class="text-white mr-1">Email : </span> @consultplus.com
+                    <span class="text-white mr-1">Email : </span> <a href="mailto:@consultplus.com">@consultplus.com</a>
                 </li>
                 <li class="header-phone pr-0">
-                    <span class="text-white mr-1">Phone : </span> +91 5685 6664 555
+                    <span class="text-white mr-1">Phone : </span><a href="tel: +9156856664555">+91 5685 6664 555</a>
                 </li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
             </div>
         </nav>
     </header>
-    <section>
+    <section class="main">
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="5000">
@@ -199,20 +199,238 @@
                         </div>
                     </div>
                 </div>
-            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <a class="carousel-control-prev arrow" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="fas fa-angle-left fa-2x" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next arrow" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="fas fa-angle-right fa-2x" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-right about-description">
+                    <h2><span>What we are</span>About us</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled
+                    </p>
+                    <a href="#" class="mb-3 mb-md-0">Read More</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <picture>
+                        <source srcset="img/about-img.webp" type="image/webp">
+                        <img src="img/about-img.png" alt="About us photo" class="img-fluid mx-auto d-block">
+                    </picture>
+                    <div class="excellence mx-auto">
+                        <div class="wrapper">
+                            <picture>
+                                <source srcset="img/excellence.webp" type="image/webp">
+                                <img src="img/excellence.png" alt="25 years of excellence"
+                                    class="img-fluid mx-auto d-block mb-3">
+                            </picture>
+                            <p>
+                                <span>25</span>year of excellence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-
-
-
+    <section class="steps">
+        <div class="container">
+            <h2 class="steps-title text-center text-md-left"><span>Our</span>Steps</h2>
+            <ul class="row steps-list text-center text-md-left">
+                <li class="col-12 col-md-4 steps-item steps-industry-item mb-3 mb-md-0">
+                    <span>01</span>
+                    <h3>Choose your industry</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry.</p>
+                </li>
+                <li class="col-12 col-md-4 steps-item steps-service-item mb-3 mb-md-0">
+                    <span>02</span>
+                    <h3>Choose your service</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry.</p>
+                </li>
+                <li class="col-12 col-md-4 steps-item steps-bussines-item mb-3 mb-md-0">
+                    <span>03</span>
+                    <h3>Boost your business</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <h2 class="project-title text-center text-md-left"><span>Featured</span> Projects</h2>
+            <div class="row mb-4">
+                <ul class="col-12 col-md-6">
+                    <li class="mb-3 mb-xl-0 project-item">
+                        <picture>
+                            <source srcset="img/project-1.webp" type="image/webp">
+                            <img src="img/project-1.png" alt="Banking" class="img-fluid mx-auto d-block">
+                        </picture>
+                        <a href="#" class="project-link">Banking</a>
+                        <div class="project-corner project-banking-corner">
+                            <span class="fas fa-plus plus"></span>
+                        </div>
+                        <div class="project-overlay project-banking-overlay">
+                            <h3>Project Banking</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="col-12 col-md-6 d-flex flex-wrap justify-content-between">
+                    <li class="project-item mb-3 mb-xl-0 mx-auto mx-xl-0">
+                        <picture>
+                            <source srcset="img/project-4.webp" type="image/webp">
+                            <img src="img/project-4.png" alt="Building" class="img-fluid mx-auto h-100">
+                        </picture>
+                        <a href="#" class="project-link">Building</a>
+                        <div class="project-corner project-building-corner">
+                            <span class="fas fa-plus building-plus"></span>
+                        </div>
+                        <div class="project-overlay project-building-overlay">
+                            <h3>Project Building</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                    <li class="project-item mb-3 mb-xl-0 mx-auto mx-xl-0">
+                        <picture>
+                            <source srcset="img/project-2.webp" type="image/webp">
+                            <img src="img/project-2.png" alt="Technology" class="img-fluid mx-auto h-100">
+                        </picture>
+                        <a href="#" class="project-link">Technology</a>
+                        <div class="project-corner project-technology-corner">
+                            <span class="fas fa-plus technology-plus"></span>
+                        </div>
+                        <div class="project-overlay project-technology-overlay">
+                            <h3>Project Technology</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                    <li class="project-item align-self-end mx-auto">
+                        <picture>
+                            <source srcset="img/project-3.webp" type="image/webp">
+                            <img src="img/project-3.png" alt="Real estate" class="img-fluid mx-auto d-block">
+                        </picture>
+                        <a href="#" class="project-link">Real estate</a>
+                        <div class="project-corner project-estate-corner">
+                            <span class="fas fa-plus estate-plus"></span>
+                        </div>
+                        <div class="project-overlay project-estate-overlay">
+                            <h3>Project Real estate</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="project-button mx-auto mt-4">Full Projects</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials text-center text-md-left">
+        <div class="container">
+            <h2 class="testimonials-title"><span>Happy CLients</span>Testimonials</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <ul class="carousel-inner">
+                    <li class="carousel-item active">
+                        <div class="comment-wrapper d-flex justify-content-between">
+                            <picture>
+                                <source srcset="img/icon_quote1.webp" type="image/webp">
+                                <img src="img/icon_quote1.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                            <p class="mb-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type speci book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially.
+                            </p>
+                            <picture>
+                                <source srcset="img/icon_quote2.webp" type="image/webp">
+                                <img src="img/icon_quote2.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="comment-wrapper d-flex justify-content-between">
+                            <picture>
+                                <source srcset="img/icon_quote1.webp" type="image/webp">
+                                <img src="img/icon_quote1.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                            <p class="mb-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type speci book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially.
+                            </p>
+                            <picture>
+                                <source srcset="img/icon_quote2.webp" type="image/webp">
+                                <img src="img/icon_quote2.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="comment-wrapper d-flex justify-content-between">
+                            <picture>
+                                <source srcset="img/icon_quote1.webp" type="image/webp">
+                                <img src="img/icon_quote1.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                            <p class="mb-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type speci book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially.
+                            </p>
+                            <picture>
+                                <source srcset="img/icon_quote2.webp" type="image/webp">
+                                <img src="img/icon_quote2.png" alt="Icon quote" class="d-none d-xl-block">
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="carousel-indicators text-center text-md-left align-items-center">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator-item d-md-flex align-items-center">
+                        <picture>
+                            <source srcset="img/client1.webp" type="image/webp">
+                            <img src="img/client1.png" alt="Photo client" class="mr-md-4">
+                        </picture>
+                        <p><span>Paul Allen</span>Designation</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicator-item d-md-flex align-items-center">
+                        <picture>
+                            <source srcset="img/client2.webp" type="image/webp">
+                            <img src="img/client2.png" alt="Photo client" class="mr-md-4">
+                        </picture>
+                        <p><span>Chris Hirata</span>Designation</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicator-item d-md-flex align-items-center">
+                        <picture>
+                            <source srcset="img/client3.webp" type="image/webp">
+                            <img src="img/client3.png" alt="Photo client" class="mr-md-4">
+                        </picture>
+                        <p><span>Monica Ricci</span>Designation</p>
+                    </li>
+                    <li class="indicator-item d-none d-lg-flex">
+                        <ul class="carousel-indicators inner-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active-inner"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ul>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -222,6 +440,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" defer></script>
     <script src="js/custom.js" defer></script>
 </body>
 
